@@ -1,0 +1,15 @@
+{
+  "name": "html-sample",
+  "version": "1.0.0",
+  "description": "Training Exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dinard Nicosia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^17.0.1"
+  }
+}
