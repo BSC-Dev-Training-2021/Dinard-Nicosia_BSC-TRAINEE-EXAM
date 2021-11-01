@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #881d71;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(10, 92, 81, 0.87);
+}
+
+::-webkit-scrollbar-corner {
+    background: rgb(8, 107, 74);
+}
 body{
     display: flex;
     flex-direction: column;

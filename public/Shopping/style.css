@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0.05rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div,h1, header, section, li, ul{
+    border: 1px gray solid;
+}
+.menu li{
+    list-style-type: none;
+    display: inline;
+    color: whitesmoke;
+}
+.p2-menu2 li{
+    padding:10px;
+    list-style-type: none;
+    display: inline;
+    color: whitesmoke;
+}
+.p2-menu2 li a{
+    color: whitesmoke;
+    margin: 20px;
+}
+.p2-menu2 li:hover{
+    color: rgb(32, 32, 32);
+    background: linear-gradient(to left, rgba(255, 0, 0, 0.589), purple);
+}
+.p2-menu2 li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+body header{
+    display: flex;
+    flex-direction: column ;
+    background-color: rgb(241, 240, 240);
+}
+.header-p1{
+    flex: 1;
+    color: whitesmoke;
+    
+}
+.header-p1{
+    text-align: right;
+}
+.header-p1 ul li{
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.header-p1 ul li a{
+    color: rgb(32, 32, 32);
+   
+}
+.header-p1 ul li a:hover{
+    background: linear-gradient(to left, rgba(255, 0, 0, 0.411), rgba(128, 0, 128, 0.534));
+   
+}
+.menu{
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
+}
+.header-p2{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(54, 54, 54);
+    color: whitesmoke;
+    padding-left: 10px;
+    
+}
+.p2-menu2{
+    flex: 1;
+    padding: 10px;
+} 
+.p2-h2{
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.3rem;
+    
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), purple);
+}
+.section-1{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+.s1-div1{
+    flex: 1;
+    background-color: rgba(247, 247, 247, 0.466);
+    /* border-right: 1px black solid; */
+}
+.s1-div1 input{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+.s1-div1 h3{
+    padding-left: 10px;
+}
+.s1-div2{
+    flex: 4;
+    display: flex;
+}
+.s1-div2 table tr td{
+    margin: 20px;
+}
+.s1-div2 p{
+    flex: 1;
+    height: 70px;
+    margin: 5px;
+}
+.s1-div2 div h2{
+    flex: 1;
+    /* border: 1px gray solid; */
+}
+.s1-div2 div{
+    flex: 1;
+}
+.s1-div2 div ul li{
+    margin: 10px;
+    height: 10vh;
+}
+.s1-div2 div ul{
+    list-style-type: None;
+}
+.cart-li{
+    display: flex;
+
+}
+.cart-li h3, h4{
+    flex: 1;
+    /* border: 1px gray solid; */
+    margin: 20px;
+    
+}
+.cart-li p{
+    flex: 1;
+    
+    margin: 0px;
+    padding: 0;
+    
+}
+.table tr, td{
+    border: 1px gray solid;
+    
+}
+.table tr td{
+    margin: 0px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+.table{
+    flex-basis:100%;
+}
+a{
+    text-decoration: none;
+    counter-reset: black;
+}
+a:hover{
+    text-decoration: rgb(151, 1, 94);
+}
+.footer{
+    background-color: rgb(54, 54, 54);
+    height: 10vh;
+}

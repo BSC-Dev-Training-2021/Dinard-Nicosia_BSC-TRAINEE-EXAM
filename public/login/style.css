@@ -138,7 +138,7 @@ html, body{
 }
 .right{
     flex: 1;
-    background-image: linear-gradient(rgb(0, 95, 13), rgb(134, 0, 101));   
+    background-image: linear-gradient(rgb(15, 80, 55), rgb(134, 0, 101));   
     
 }
 .fieldset-login{
@@ -165,6 +165,13 @@ html, body{
 }
 .right h1, h3{
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+}
+.right h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
 }
 .right h3 img{
     height: 30vh;
@@ -202,9 +209,7 @@ html, body{
     background-repeat: no-repeat;
     background-size:cover;
 }
-.home,p,div,section{
-    /* border: 1px gray solid; */
-}
+
 .home{
     display: flex;
     flex-direction: column;
@@ -286,6 +291,7 @@ html, body{
     
 }
 .strong{
-    color: rgb(199, 9, 72);
+    color: rgb(17, 139, 6);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
