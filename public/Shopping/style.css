@@ -4,9 +4,9 @@ body{
     letter-spacing: 0.05rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-div,h1, header, section, li, ul{
+/* div,h1, header, section, li, ul{
     border: 1px gray solid;
-}
+} */
 .menu li{
     list-style-type: none;
     display: inline;
@@ -102,6 +102,7 @@ body header{
 .s1-div2{
     flex: 4;
     display: flex;
+    flex-direction:column;
 }
 .s1-div2 table tr td{
     margin: 20px;
@@ -125,19 +126,57 @@ body header{
 .s1-div2 div ul{
     list-style-type: None;
 }
-.cart-li{
+.cart-div{
     display: flex;
+    border: solid gray 1px;
+    margin: 30px;
 
 }
-.cart-li h3, h4{
+.cart-div h3,h4{
+    
     flex: 1;
+    /* border: black 1px solid; */
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+}
+.cart-head{
+    display: flex;
+    flex: 1;
+    border-bottom: gray 1px solid;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+}
+.cart-div  h4 li{
+    margin: 0px;
+    padding: 5px;
+    border-bottom: gray solid 1px;
+    letter-spacing: 0.05rem;
+    font-weight: 350;
+}
+.cart-div h5{
+    flex:1;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.cart-li h3, h4{
+    flex: 2;
     /* border: 1px gray solid; */
     margin: 20px;
     
 }
 .cart-li p{
     flex: 1;
-    
+    border-left: 1px gray solid;
     margin: 0px;
     padding: 0;
     
@@ -165,4 +204,79 @@ a:hover{
 .footer{
     background-color: rgb(54, 54, 54);
     height: 10vh;
+}
+.header-item{
+    flex: 2;
+    border-right: 1px gray solid;
+}
+.header-item2{
+    flex: 3;
+}
+.header-pitem{
+    padding: 0px; 
+    margin: 0px; 
+    height: 5px;
+}
+.li-total{
+    list-style-type: none;
+    text-align: center;
+    font-weight: 600;
+}
+.cancel-bttn{
+    width: 90%;
+    padding: 10px; 
+    background-color: tomato;
+    border-radius: 0.3rem;
+    border: none;
+}
+.cancel-bttn a{
+    color: whitesmoke;
+}
+.cancel-bttn:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+.cancel-bttn a:hover{
+    color: tomato;
+}
+.brand-items{
+    display: flex;
+    border: 0.5px gray solid;
+
+}
+.brand-image{
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.s1-div2{
+    align-self:flex-start;
+}
+.items{
+    border: 1px solid gray;
+    flex: 1;
+    margin: 20px;
+    justify-self: center;
+    text-align: center;
+    
+}
+.items-cont{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.items-items{
+    border: 0.5px solid gray;
+    margin: 10px;
+    text-align: center;
+}
+.img-item{
+    height: 20vh;
+    width: 30vh;
+}
+.footer-item{
+    flex: 1;
+    background-color: rgba(32, 31, 31, 0.719);
+    padding: 30px;
 }

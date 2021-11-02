@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Shopping Site</title>
 </head>
-<body>
-    <header>
+<body style="display: flex; flex-direction: column;">
+    <header style="flex: 1;">
         <div class="header-p1"><ul class="menu">
             <li><a href="">Facebook</a></li>
             <li><a href="">Email</a></li>
             <li><a href="">Number</a></li>
-            <li><a href="">My account</a></li>
+            <li><a href="/index.html">My account</a></li>
         </ul></div>
         <div class="header-p2">
             <h2 class="p2-h2">LAZhoppe</h2>
@@ -22,17 +22,23 @@
             <li><a href="">ABOUT</a> </li>
             <li><a href="">BLOGS</a></li>
             <li><a href="cart.html">CART</a></li>
-            <li><a href="">USER</a></li>
+            <li><a href="/login/login.html">LOG IN</a></li>
         </ul>
     </div>
     </header>
-    <section class="section-1">
+    <section class="section-1" style="flex: 1;">
         <div class="s1-div1">
             <input type="search" name="" id="" placeholder="Search here..">
             <h3>List of categories</h3>
             
         <ul>
-            <li><a href="">Gadgets</a> </li>
+            <li><a href="">Motorcycles</a> </li>
+            <li><a href="">Motorcycles Accessories</a> </li>
+            <li><a href="">Motorcycles seat</a> </li>
+            <li><a href="">Motorcycles wheels</a> </li>
+            <li><a href="">Motorcycles mags</a> </li>
+            <li><a href="">Motorcycles oil</a> </li>
+            <li><a href="">Motorcycles decals</a> </li>
             <li><a href="">Appliances</a></li>
             <li><a href="">furnitures</a></li>
             <li>Spare Parts</li>
@@ -41,16 +47,43 @@
         </ul>
     </div>
     <div class="s1-div2">
-        <table class="table">
-            <tr><td><a href="">Xiaomi</a></td><td><a href="">Nokia</a></td><td><a href="">Huawei</a></td><td><a href="">LG</a></td></tr>
-            <tr><td><a href="">Samsung</a> </td><td><a href="">Kawasaki</a> </td><td><a href="">Yamaha</a></td><td><a href="">Honda</a></td></tr>
-            <tr><td><a href=""> Sold out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a></td></tr>
-            <tr><td><a href=""> Sold out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a></td></tr>
-            <tr><td><a href=""> Sold out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a></td></tr>
-            <tr><td><a href=""> Sold out</a><td><a href=""> So  ld out</a><td><a href=""> Sold out</a><td><a href=""> Sold out</a></td></tr>
-        </table>
+        <div class="brand-items">
+            <div class="items" ><a href=""><img class="brand-image" src="/image/honda.png" alt="">HONDA</a></div>
+            <div class="items" ><a href=""><img class="brand-image" src="/image/yamaha.jfif" alt="">YAMAHA</a></div>
+            <div class="items" ><a href=""><img class="brand-image" src="/image/kawasaki.png" alt="">KAWASAKI</a></div>
+            <div class="items" ><a href=""><img class="brand-image" src="/image/suzuki.png" alt="">SUZUKI</a></div>
+        </div>
+        <div class="items-cont">
+            <div class="items-items"><a href=""><img class="img-item" src="/image/res200-item.jfif" alt="">Kawasaki RS200</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/r15-item.jfif" alt="">Yamaha R15v4</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/nmax-item.jfif" alt="">Yamaha Nmax155 2021 model</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image//dominar-item.jfif" alt="">Kawasaki Dominar 400</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/pcx-item.jfif" alt="">Honda PCX160</a></div>
+        </div>
+        <div class="items-cont">
+            <div class="items-items"><a href=""><img class="img-item" src="/image/raider-item.jfif" alt="">Suzuki Raider 150 FI</a></div>
+            <div class="items-items"><a href=""><img class="img-item" src="/image/z1000-item.jfif" alt="">Kawasaki Z1000R Edition</a></div>
+            <div class="items-items"><a href=""><img class="img-item" src="/image/ninja400-item.jfif" alt="">Kawasaki Ninja 400</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/goldwing-item.jfif" alt="">Honda Gold Wing</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/nmax-item.jfif" alt="">Yamaha Nmax155 2021 model</a></div>
+        </div>
+        <div class="items-cont">
+            <div class="items-items"><a href=""><img class="img-item" src="/image/ninja650-item.jfif" alt="">Kawasaki Ninja 650</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/gsx1000-item.jfif" alt="">Suzuki GSX-1000</a></div>
+            <div class="items-items"><a href=""><img class="img-item" src="/image/ninja400-item.jfif" alt="">Kawasaki Ninja 400</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/r15-item.jfif" alt="">Yamaha R15v4</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/hayabusa-item.jfif" alt="">Kawasaki Hayabusa 1000</a></div>
+        </div>
+        <div class="items-cont">
+            <div class="items-items"><a href=""><img class="img-item" src="/image/ninja1000-item.jfif" alt="">Kawasaki Ninja 1000</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/r15-item.jfif" alt="">Yamaha R15v4</a></div>
+            <div class="items-items"><a href=""><img class="img-item" src="/image/ninja400-item.jfif" alt="">Kawasaki Ninja 400</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/rebel500-items.jfif" alt="">Honda Rebel 500</a></div>
+            <div class="items-items"><a href=""><img  class="img-item" src="/image/adv150-item.jfif" alt="">Honda ADV-150 2021 model</a></div>
+        </div>
     </div>
+    
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer-item">footer</footer>
 </body>
 </html>

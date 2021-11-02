@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Shopping Site</title>
 </head>
-<body>
-    <header>
+<body style="display: flex; flex-direction: column;">
+    <header style="flex: 1;">
         <div class="header-p1"><ul class="menu">
             <li><a href="">Facebook</a></li>
             <li><a href="">Email</a></li>
@@ -18,15 +18,15 @@
         <div class="header-p2">
             <h2 class="p2-h2">LAZhoppe</h2>
         <ul class="p2-menu2">
-            <li><a href="">HOME</a></li>
+            <li><a href="/Shopping/index.html">HOME</a></li>
             <li><a href="">ABOUT</a> </li>
             <li><a href="">BLOGS</a></li>
-            <li><a href="">CART</a></li>
-            <li><a href="">USER</a></li>
+            <li><a href="/Shopping/cart.html">CART</a></li>
+            <li><a href="/">USER</a></li>
         </ul>
     </div>
     </header>
-    <section class="section-1">
+    <section class="section-1" style="flex: 1;">
         <div class="s1-div1">
             <input type="search" name="" id="" placeholder="Search here..">
             <h3>List of categories</h3>
@@ -43,15 +43,102 @@
     <div class="s1-div2">
         
         <div>
-            <h2>Cart</h2>
-            <ul>
-                <li class="cart-li"><h3>Yamaha</h3> <h4>Yamha NMAX 155 <p>155cc </p> </h4> <h4>Price<p>P105,000.00 Pesos</p></h4></li>
-                <li class="cart-li"><h3>Honda</h3> <h4>CBR 155 <p>155cc </p> </h4> <h4>Price<p>P150,000.00 Pesos</p></h4></li>
-            </ul>
+            <h2>Cart: 
+                <span style="font-weight: 450;">You have Ordered 3 items</span>
+            </h2>
+            <div class="cart-head">
+                <h4>
+                    Item
+                </h4> 
+                <h4> Details
+                </h4>
+                <h4>Price
+                   
+                </h4>
+                <h4 style="text-align: right; padding-right: 80px;"> Action
+                </h4>
+            </div>
+
+                <div class="cart-div">
+                    
+                        <img src="/image/order-1.jfif" alt="NMAX">
+                    
+                    <h4 class="header-item"> Yamaha NMAX 155
+                        <li>Yamaha Scooter</li>
+                        <li>Fuel Injected</li>
+                        <li>155cc</li>
+                        <li>Quantity:<input type="number" name="" id="" placeholder="X1"></li>
+                        
+                    </h4> 
+                    <h4 class="header-item2">Price
+                        
+                        <li> P20,000.00 Pesos (Shipping Fee)</li>
+                        <li> P105,000.00 Pesos (Scooter Price)</li>
+                        <li> -P0 Pesos (Voucher applied)</li>
+                        <li class="li-total">P125,000.00 Pesos (Total)</li>
+                    </h4>
+                    <h5> 
+                        <button class="cancel-bttn"><a href="">REMOVE</a></button>
+                        
+                        
+                    </h5>
+                </div>
+
+                <div class="cart-div">
+                    
+                    <img src="/image/order-3.jfif" alt="NMAX">
+                
+                <h4 class="header-item"> Yamaha NMAX 155 Seat
+                    <li>Scooter Seat</li>
+                    <li>Uratex foam</li>
+                    <li>color: black/red</li>
+                    <li>Quantity:<input type="number" name="" id="" placeholder="X1"></li>
+                    
+                </h4> 
+                <h4 class="header-item2">Price
+                    
+                    <li> P350.00 (Shipping Fee)</li>
+                    <li> P5,000.00 Pesos (Seat Price)</li>
+                    <li> -P350 Pesos (Voucher Store applied)</li>
+                    <li class="li-total">P5,000.00 Pesos (Total)</li>
+                </h4>
+                <h5> 
+                    <button class="cancel-bttn"><a href="">REMOVE</a></button>
+                    
+                    
+                </h5>
+            </div>
+
+            <div class="cart-div">
+                    
+                <img src="/image/order-2.jfif" alt="NMAX">
+            
+            <h4 class="header-item"> Aluminum Brake Clutch Accessories
+                <li>Extendable</li>
+                <li>Folding</li>
+                <li>compatible: Nmax155,PCX160</li>
+                <li>Quantity:<input type="number" name="" id="" placeholder="X1"></li>
+                
+            </h4> 
+            <h4 class="header-item2">Price
+                
+                <li> P50.00 Pesos (Shipping Fee)</li>
+                <li> P1,500.00 Pesos (Accessories Price)</li>
+                <li> -P0 Pesos (Voucher applied)</li>
+                <li class="li-total">P1,550.00 Pesos (Total)</li>
+            </h4>
+            <h5> 
+                <button class="cancel-bttn"><a href="">REMOVE</a></button>
+                
+                
+            </h5>
+        </div>
+                
         </div>
         
-    </div>
+    </div> 
+    
     </section>
-    <footer class="footer">footer</footer>
+   <footer class="footer" style="flex: 1; height: 50vh;">footer</footer>
 </body>
 </html>
