@@ -18,7 +18,9 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
     flex-basis: auto;
 }
 header, section, div{
@@ -164,9 +166,11 @@ footer{
     display: flex;
     height: 100vh;
     align-items: flex-start;
+    margin-top: 120px;
 }
 .info-1{
     flex: 1;
+    
 }
 .info-2{
     flex: 1;
@@ -199,7 +203,8 @@ footer{
 .info-ul li{
     margin: 20px;
     padding: 0px 0px 20px 0px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     border-bottom: 1px solid rgb(228, 13, 85);
 }
 .info-ul li span{
@@ -211,5 +216,6 @@ footer{
     width: 20vh;
 }
 .lead{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
