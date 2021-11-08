@@ -1,3 +1,7 @@
+<?php
+require("../backend-index.php");
+require("../auth.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,8 +29,8 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="">ABOUT</a> </li>
                 <li><a href="">BLOGS</a></li>
-                <li><a href="cart.html">CART</a></li>
-                <li><a href="../login/login.html">LOG IN</a></li>
+                <li><a href="cart.php">CART</a></li>
+                <li><a href="../logout.php">LOGOUT</a></li>
             </ul>
         </div>
     </header>
@@ -109,7 +113,6 @@
         </div>
 
     </section>
-    <footer class="footer-item">footer</footer>
 </body>
 
 </html>

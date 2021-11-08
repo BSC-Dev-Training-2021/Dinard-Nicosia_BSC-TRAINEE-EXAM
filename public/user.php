@@ -1,3 +1,7 @@
+<?php
+require("backend-index.php");
+require("auth.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,7 @@
 <body>
     <header>
         <div class="nav-icon">
-            <p><a href="Shopping/index.html"><img src="image/logo.png" alt=""></a></p>
+            <p><a href="Shopping/index.php"><img src="image/logo.png" alt=""></a></p>
         </div>
         <div class="nav-extra"></div>
         <div class="intro">
