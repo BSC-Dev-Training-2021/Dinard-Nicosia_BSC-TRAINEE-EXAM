@@ -21,14 +21,14 @@ require("backend-login.php");
 <div class="right">
     <h1><span></span> WELCOME <span class="h-span1">PLA</span><span class="h-span2">YER</span></h1>
     <h3><img src="../image/user.png" alt="Logo"></h3>
-    <?php display_alert($alert); ?>
+    <?php $alert->display_alert($alerts); ?>
     <form action="login.php" method="POST">
     <fieldset class="fieldset-login">
         <input type="email" name="login_email" placeholder="Email" class="login-user form-control" value="<?php echo $login_email;?>">
         <input type="password" name="login_pass" placeholder="Password" class="login-pass form-control" value="<?php echo $login_pass;?>">
         <div class="button">
             <button class="btn btn-primary btn-lg" type="submit" name="login_bttn">Login</button>
-            <button class="btn btn-warning btn-lg"><a href="">Register</a></button>
+            <button class="btn btn-warning btn-lg"><a href="register.php">Register</a></button>
         </div>
     </fieldset>
     </form>

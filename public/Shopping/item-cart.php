@@ -1,6 +1,7 @@
 <?php
 require_once("../library/lib_handler.php");
-include("item-cart-add.php");
+include("cart-update-backend.php");
+include("cart-delete-backend.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,7 +18,7 @@ include("item-cart-add.php");
 </head>
 
 <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="item.php">LaShopee</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +27,7 @@ include("item-cart-add.php");
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="item.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="item.php">Home</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,26 +36,17 @@ include("item-cart-add.php");
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <li><a class="dropdown-item" href="item-add.php">Add Products</a></li>
                             <li><a class="dropdown-item" href="item-update.php">Update Products</a></li>
-                            
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#"></a></li> -->
                         </ul>
-                        
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cart
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="item-cart.php">View Cart</a></li>
+                            <li><a class="dropdown-item active" href="item-cart.php">View Cart</a></li>
                         </ul>
-                        
+
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link disabled">Link</a>
-                    </li> -->
                 </ul>
                 <form class="d-flex">
                     <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
@@ -63,12 +55,12 @@ include("item-cart-add.php");
             </div>
         </div>
     </nav>
+    <!-- end of menu bar -->
+    <div class="container" style="margin-top: 80px;">
 
-    <div class="container" style="margin-top: 150px;">
+        <h2>Cart</h2>
+        <?php $crt_tbl_class->tbl_display(1, $table_crt, $db) ?>
 
-        <div class="row">
-            <?php $shp_tbl_class->tbl_display($table_shop, $db); ?>
-        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

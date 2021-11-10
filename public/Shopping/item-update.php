@@ -1,6 +1,7 @@
 <?php
 require_once("../library/lib_handler.php");
-include("item-cart-add.php");
+include("item-update-backend.php");
+include("item-delete-backend.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -26,15 +27,15 @@ include("item-cart-add.php");
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="item.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="item.php">Home</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="item-add.php">Add Products</a></li>
-                            <li><a class="dropdown-item" href="item-update.php">Update Products</a></li>
+                            <li><a class="dropdown-item " href="item-add.php">Add Products</a></li>
+                            <li><a class="dropdown-item active" href="item-update.php">Update Products</a></li>
                             
                             <!-- <li>
                                 <hr class="dropdown-divider">
@@ -64,12 +65,77 @@ include("item-cart-add.php");
         </div>
     </nav>
 
-    <div class="container" style="margin-top: 150px;">
 
+
+    <div class="container " style="margin-top: 80px;">
+
+
+    <h2>Update Products</h2>
         <div class="row">
-            <?php $shp_tbl_class->tbl_display($table_shop, $db); ?>
+            <div class='col-sm-6' style='margin-bottom:20px;'>
+                <div class='card'>
+                    <div class='card-body'>
+                        <form method="POST" action="item-update.php" enctype="multipart/form-data">
+                            <div class="mb-3 ">
+                                <label for="exampleInputEmail1" class="form-label">Name of Products</label>
+                                <input type="text" class="form-control" name="item_name" value="<?php echo $col2; ?>">
+                                <input type="hidden" class="form-control" name="id" value="<?php echo $col1; ?>">
+                                <div class="form-text"></div>
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="exampleInputEmail1" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" name="item_qty" value="<?php echo $col3; ?>">
+                                <div class="form-text"> </div>
+                            </div>
+                            <div class="mb-3 ">
+                                <label class="form-label">Product image</label>
+                                <input class="form-control" type="file" name="uploadfile" accept="image/*" id="imgInp" value="<?php echo $col4;?>">
+                                <div class="form-text"> </div>
+                            </div>
+                            <div class="mb-3 ">
+                                <label class="form-label"> </label>
+                                <button type="submit" class="btn btn-warning" name="update_submit">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-sm-6' >
+                <div class='card' style='height:37vh;'>
+                    <img id="blah" class='card-img-top' src="<?php echo '../image/' . $col4; ?>" alt="No Preview" style='height:36.5vh;' />
+                    </form>
+                </div>
+            </div>
+
         </div>
+        <table class="table table-hover ">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Quantity</th>
+                    <th scope="col">Image</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $shp_tbl_class->tbl_display_action($table_shop, $db);
+                ?>
+            </tbody>
+        </table>
     </div>
+    <script>
+        imgInp.onchange = evt => {
+            const [file] = imgInp.files
+            if (file) {
+                blah.src = URL.createObjectURL(file)
+            }else{
+                blah.src = URL.createObjectURL("../image/nopreview.jpeg")
+            }
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
