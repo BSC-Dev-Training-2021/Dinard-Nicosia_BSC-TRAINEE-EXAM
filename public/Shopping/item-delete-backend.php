@@ -1,4 +1,5 @@
 <?php
+
 require_once("../library/lib_handler.php");
 
 if (isset($_POST["delete_bttn"])) {

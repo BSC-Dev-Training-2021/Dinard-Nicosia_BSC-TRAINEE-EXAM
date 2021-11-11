@@ -42,6 +42,7 @@ if (isset($_POST['login_bttn'])) {
             $hashed = $row->user_password;
             if(password_verify($login_pass, $hashed)){
                 $alerts="login";
+                $_SESSION['user_id'] = $row->user_id;
                 $_SESSION['email'] = $row->user_email;
                 $_SESSION['admin'] = $row->user_admin;
                 $_SESSION['auth_time'] = time();

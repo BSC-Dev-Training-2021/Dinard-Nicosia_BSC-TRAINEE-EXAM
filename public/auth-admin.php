@@ -1,8 +1,7 @@
 <?php
     session_start();
-    $activity_time = 1;
-    if(!isset($_SESSION['email']) || !isset($_SESSION['admin'])){
-        header("Location:../login/login.php");
+    if(!isset($_SESSION['email']) || $_SESSION['admin'] !=1){
+        header("Location:../shopping/item.php");
     }else if($_SESSION['auth_time'] + $activity_time < time()){
         unset($_SESSION['email']);
         unset($_SESSION['admin']);

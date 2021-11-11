@@ -143,10 +143,11 @@ class crt_tbl
     public $col_3;
     public $col_4;
     public $tbl_name;
-    function tbl_write($col_1, $col_2, $col_3, $col_4, $tbl_name, $db)
+    function tbl_write($col_user, $col_1, $col_2, $col_3, $col_4, $tbl_name, $db)
     {
         $mysql = sprintf(
-            "INSERT INTO $tbl_name (user_id, cart_name, cart_qty, cart_img) VALUES ('%s','%s','%s','%s')",
+            "INSERT INTO $tbl_name (user_id, prod_id, cart_name, cart_qty, cart_img) VALUES ('%s','%s','%s','%s','%s')",
+            $db->real_escape_string($col_user),
             $db->real_escape_string($col_1),
             $db->real_escape_string($col_2),
             $db->real_escape_string($col_3),
